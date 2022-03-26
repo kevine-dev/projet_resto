@@ -1,0 +1,112 @@
+h2
+{
+    color: red;
+}
+
+.items
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.item
+{
+   
+     margin-left: 20px;
+     width: 200px;
+     padding: 10px;
+     margin: 20px;
+}
+
+
+.item img
+{
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.item p
+{
+    text-align: center;
+    font-weight: bold;
+}
+.item .prix
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    color:red;
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+.panier
+{
+   background-color:crimson;
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   position:fixed;
+   right: 20px;
+   top:50%;
+   transform: translateY(-50%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color:#fff;
+   
+}
+.panier span
+{
+    font-weight: bold;
+}
+.noresult
+{
+     height: 280px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.noresult h1
+{
+     color:#fff;
+     font-weight: bolder;
+     text-align: center;
+}
+@media all and (max-width:750px)
+{
+    body
+    {
+        padding: 10px;
+    }
+
+    .show_nav
+    {
+        left: 0;
+     
+    }
+    .hide_nav
+    {
+        left: -900px;
+    }
+    .item 
+    {
+        width: 280px;
+        
+    }
+    .item img
+    {
+         height: 150px;
+    }
+  
+    
+
+}

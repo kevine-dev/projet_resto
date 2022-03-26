@@ -1,0 +1,273 @@
+
+
+/*--------------------------------------------------------------------------------------*/
+.plats
+{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+    z-index: -1;
+}
+.plats h1
+{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.produits
+{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   position: relative;
+   
+   
+}
+.produits .card
+{
+     width: 200px;
+     padding: 10px;
+     margin: 20px;
+     transition: 250ms;
+    
+   
+}
+.produits .card:hover
+{
+    box-shadow: 0px 3px 6px 0px #0000003b;
+}
+.produits .card img
+{
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.produits .card p
+{
+    text-align: center;
+    font-weight: bold;
+}
+.produits .card .prix
+{
+     display: flex;
+     justify-content: space-between;
+     padding: 8px;
+     color:red;
+     font-weight: bold;
+   justify-content: center;
+}
+
+.produits .card button
+{
+    
+    font-weight: bold;
+    font-size: 15px;
+}
+.like
+{
+   color: crimson;
+}
+/*-------------------------------------------------------------------*/
+.desserts
+{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+.boisson
+{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px; 
+}
+.desserts h1
+{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.boisson h1
+{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.dessert
+{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+}
+
+.boissons
+{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+}
+
+
+.dessert .card
+{
+     width: 200px;
+     padding: 10px;
+     margin: 20px;
+     transition: 250ms;
+}
+.boissons .card
+{
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    transition: 250ms;
+}
+.dessert .card:hover
+{
+    box-shadow: 0px 3px 6px 0px #0000003b;
+}
+.boissons .card:hover
+{
+    box-shadow: 0px 3px 6px 0px #0000003b;
+}
+.dessert .card img
+{
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.boissons .card img
+{
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.dessert .card p
+{
+    text-align: center;
+    font-weight: bold;
+}
+.boissons .card p
+{
+    text-align: center;
+    font-weight: bold;
+}
+.dessert .card .prix
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    color:red;
+    font-weight: bold;
+  justify-content: center;
+}
+
+
+.boissons .card .prix
+{
+     display: flex;
+     display: flex;
+     justify-content: space-between;
+     padding: 8px;
+     color:red;
+     font-weight: bold;
+    justify-content: center;
+}
+
+.dessert .card button
+{
+    
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.boissons.card button
+{
+    
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/*--------------------------*/
+.panier i
+{
+    font-size: 25px;
+}
+
+.panier
+{
+   background-color:crimson;
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   position:fixed;
+   right: 20px;
+   top:50%;
+   transform: translateY(-50%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color:#fff;
+}
+.panier span
+{
+    font-weight: bold;
+}
+
+
+
+/*-------------------------------------*/
+
+
+
+
+@media all and (max-width:750px)
+{
+    body
+    {
+        padding: 10px;
+    }
+
+    .show_nav
+    {
+        left: 0;
+     
+    }
+    .hide_nav
+    {
+        left: -900px;
+    }
+
+    .produits .card
+    {
+        width: 280px;
+        
+    }
+    .produits .card img
+    {
+         height: 150px;
+    }
+    .dessert .card
+    {
+        width: 280px;
+    }
+
+    .boissons .card
+    {
+        width: 280px;
+    }
+
+    
+
+}
+
+
