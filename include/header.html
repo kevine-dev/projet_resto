@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../style/command.css">
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="../style/t.css">
+    <title>Restorant</title>
+    <style>
+@font-face 
+{
+    font-family: 'title';
+    src: url('../font/Cookie-Regular.ttf');
+}
+@font-face {
+    font-family: 'title2';
+    src: url('../font/CormorantGaramond-Medium.ttf');
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: initial;
+   
+}
+
+body
+{
+    height: 100vh;
+   background-color: #000;
+   height: 0;
+    
+}
+
+header nav h1
+{
+    font-family: 'title';
+    letter-spacing: 2px;
+    padding: 4px;
+    color:#fff;
+    position: relative;
+    z-index: 2001;
+   
+}
+nav ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    margin: 0;
+    left: 0;
+    padding: 0;
+
+    
+}
+nav ul li a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    font-weight: bold;
+    color:#fff;
+    transition: 250ms;
+}
+nav ul li a:hover
+{
+     text-decoration: overline;
+     color:#fff;
+}
+
+nav  .search_btn
+{
+  position: relative;
+  z-index: 800;
+}
+
+header h1 i
+{
+   position: absolute;
+   right: 0;
+   top:15px;
+   color:#fff;
+   opacity: 0;
+}
+.search_bar
+{
+  position: relative;
+ margin-left: 30px;
+}
+.search_bar button.search_btn
+{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: 0;
+}
+
+.input
+{  
+ 
+  position:relative;
+  z-index: 10;
+  transition: 600ms;
+  top: 0;
+  right: 0;
+}
+
+
+@media all and (max-width:750px)
+{
+
+    header h1 i
+    {
+        opacity: 1;
+    }
+    header h1 i:hover
+    {
+        cursor: pointer;
+        color:crimson
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color:#000;
+        top:0;
+        left: -900px;
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+        z-index: 200;
+        padding: 0;
+        margin: 0;
+    
+    }
+    nav ul  li
+    {
+       
+        margin-top: 20px;
+
+    }
+    nav ul li a
+    {
+         display: flex;
+    }
+    .show_nav
+    {
+        left: 0px;
+     
+    }
+    .hide_nav
+    {
+        left: -900px;
+    }
+
+    header form,.user
+    {
+       position: relative;
+       left: 50%;
+       right: 50%;
+       transform: translateX(-56%);
+    }
+}
+    </style>
+    
+</head>
+<body>
+    
+    
+    <div class="container">
+
+        <header>
+            <nav>
+                <div class="row nav_prin">
+               
+                    <div class="col-md-2">
+                        <h1><span><i class="fa-solid fa-fork"></i>L</span>es Delices
+                          <i class="fa fa-list list"></i>
+                        </h1>
+                    </div>
+                    
+                    <div class="col-md-10">
+                        <ul>
+                            <li><a href="../page/index.php">Commandez</a></li>
+                            <li><a href="../page/contact.php">Reservation</a></li>
+                            <li><a href="../page/info.php">Qui sommes-nous ?</a></li>
+                           
+                            <li><a href="#">
+                                <form action="t.php" method="get">
+                                     <div class="search_bar">
+                                        <input type="text" class="input form-control" name="q">
+                                        <button class="btn btn-danger search_btn"><i class="fa fa-search"></i></button>
+                                     </div>
+                                </form>
+                            </a></li>
+
+                        </ul>
+                    </div>
+                
+                </div>
+            </nav>
+        </header><br/>
+    
+        <script>
+
+        </script>
+</div>

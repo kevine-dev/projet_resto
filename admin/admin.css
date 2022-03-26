@@ -1,0 +1,396 @@
+@font-face 
+{
+    font-family: 'title';
+    src: url('../font/Cookie-Regular.ttf');
+}
+*
+{  
+  
+    font-family:initial;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+nav
+{
+  
+    padding: 20px;
+    height:92vh;
+    box-shadow:0px 1px 3px 0px #00000038;
+    position: relative;
+    z-index: 2000;
+
+  
+  
+}
+nav ul
+{
+    list-style: none;
+    padding: 0;
+}
+nav h1
+{
+    width: 100%;
+    text-align: center; 
+    font-size: 30px;  
+}
+nav ul li
+{
+    text-align: center;
+    margin-top: 35px; 
+    font-weight: bolder;
+}
+nav ul li a
+{
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.781);
+    
+}
+nav ul li a:hover
+{
+    background-color: rgba(220, 20, 60, 0.486);
+    color:rgba(0, 0, 0, 0.781);
+}
+nav ul li a.active
+{
+    background-color: rgba(220, 20, 60, 0.486);
+}
+i.rm_section
+{
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+    z-index: 9000;
+    color: #fff;
+    background-color: rgba(255, 0, 0, 0.459);
+    top:50%;
+    padding: 10px;
+    border-radius: 50%;
+    
+
+}
+.content
+{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+   
+}
+
+.content section
+{
+    padding: 20px;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -10000;
+    background-color: #fff;
+   
+}
+
+.content section .form
+{
+    width: 380px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+   
+}
+
+.content section h1
+{
+    text-align: center;
+}
+
+section.show
+{
+    opacity: 1;
+    z-index: 6000;
+}
+
+.liste
+{
+    background-color:#fff;
+    padding: 20px;
+   
+}
+.liste h1
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: initial;
+}
+.items
+{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    border-radius:10px;  
+    width: 90%;
+    margin: 0 auto;
+    height:550px;
+    overflow-y:scroll;
+}
+
+
+
+
+.form .bt
+{
+    width: 100%;
+}
+
+
+
+
+
+.card
+{
+    width: 180px;
+    height: 250px;
+    position: relative;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.card img
+{
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.card p.title
+{
+    text-align: center;
+    font-weight: bold;
+}
+.card p.info_pr
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+   ;
+}
+.card .info_pr span
+{
+    display: inline-block;
+
+}
+.card .btns
+{
+    display: flex;
+  
+}
+.card .btns button
+{
+    margin-left: 5px;
+}
+.card .btns button a
+{
+   color: #fff;
+}
+
+
+
+/* gestion des erreurs*/
+
+p.err
+{
+     color:red;
+}
+p.success
+{
+     text-align: center;
+     font-weight: bold;
+     color:green
+}
+
+.success_mod
+{
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}
+@media all and (max-width:770px)
+{
+    #add 
+   {
+         overflow-y: scroll;
+   }
+   #add  form input
+   {
+       padding:3px;
+   }
+
+}
+
+@media all and (max-width:600px)
+{
+    .content section .form
+    {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.24);
+       
+    }
+
+    .items
+    {
+         height: 100%;
+         width: 100%;
+         height: 90%;
+    }
+    .search
+    {
+        height: 100%;
+        width: 100%;
+        height: 90%; 
+    }
+        
+}
+
+
+
+@media all and (max-width:506px)
+{
+
+
+    .items .card
+    {
+         width: 250px;
+        margin: 10px auto;
+    }
+    .search .card
+    {
+        width: 250px;
+        margin: 10px auto;
+    }
+        
+}
+
+
+form.connect
+
+{
+   width: 350px;
+   border: 1px solid rgba(0, 0, 0, 0.418);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   padding: 20px;
+   border-radius: 20px;
+
+   
+}
+form.connect h1
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;  
+   
+}
+
+form.connect label
+{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.568);
+   
+}
+form.connect button
+{
+    margin-top: 10px;
+    width: 100%;
+}
+form.connect .bt
+{
+    font-weight: bolder;
+}
+
+
+/*---------------------------------------------------------*/
+
+
+.formq
+{
+    border: none;
+    position: absolute;
+    z-index: 9000;
+    left: 50%;
+    top:60px;
+    transform: translateX(-50%);
+    width:250px;
+    opacity: 1;
+
+    
+}
+#q
+{
+    font-size: bold;
+}
+.vide
+{
+    font-size: 20px;
+    color:red;
+    font-weight: bold;
+}
+
+.res
+{
+    width: 100%;
+}
+.reservation{
+   width: 100%;
+   border: 1px solid rgba(0, 0, 0, 0.24);
+}
+.reservation td,th{
+   
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+}
+@media all and (max-width:600px)
+{
+     form.connect
+     {
+         width: 90%;
+         margin: 0 auto;
+
+     }
+     .reservation td,th{
+
+      
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media all and (max-width:365px)
+{
+
+    .reservation td,th{
+
+      
+        font-size: 12px;
+        width: 50%;
+    }
+}
